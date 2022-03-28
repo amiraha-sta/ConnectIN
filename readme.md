@@ -1,4 +1,4 @@
-[![Open in GitHub](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/amirah-a/ConnectIN)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/https://github.com/amirah-a/ConnectIN)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 # Flask MVC Template
