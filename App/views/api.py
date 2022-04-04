@@ -9,3 +9,7 @@ def get_api_docs():
 @api_views.route('/login', methods=['GET'])
 def login():
     return render_template('login.html')
+
+@api_views.route('/signUp', methods=['GET'])
+def signUp():
+    return render_template('signUp.html')
