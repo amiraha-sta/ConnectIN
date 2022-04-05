@@ -1,2 +1,2 @@
 language = "python3"
-run = "npm start"
+run = "bash run.sh"

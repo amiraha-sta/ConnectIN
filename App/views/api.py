@@ -14,6 +14,6 @@ def login():
 def signUp():
     return render_template('signUp.html')
 
-@api_views.route('/createProfile', methods=['GET'])
+@api_views.route('/create-profile', methods=['GET'])
 def createProfile():
-    return render_template('create-profile.html')
+    return render_template('createProfile.html')

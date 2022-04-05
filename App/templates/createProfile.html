@@ -25,13 +25,16 @@
                                     <h3 style="text-align: center; padding-bottom: 20px;">Create Alumni Profile</h3>
                                     <form>
 										
+										<div class="form-group"><input type="file" name="upload_file" class="form-control" id="upload_file" onchange="getImagePreview(event)"></div>
+                                        <div id="preview"></div>
+								
                                         <div class="form-group"><label class="text-muted" >Year</label><input type="text" class="form-control" placeholder="Enter graduation year"></div>
                                         <div class="form-group"><label class="text-muted" >Degree</label><input type="text" class="form-control" placeholder="Enter degree"></div>
                                         <div class="form-group"><label class="text-muted" >Faculty</label><input type="text" class="form-control" placeholder="Enter faculty"></div>
                                         <div class="form-group"><label class="text-muted">Department</label><input type="text" class="form-control" placeholder="Enter department name"></div>
-                                        <div class="form-group"><label class="text-muted">Job History</label> <textarea style="min-height: 100px"`name="job-history" rows=10 cols=20> </textarea></div>
+                                        <div class="form-group"><label class="text-muted">Job History</label> <textarea style="min-height: 100px" placeholder="<Company> <Position> <Description>"  rows=10 cols=20> </textarea></div>
 										<div class="form-group">
-                                        </div> <button type="submit" class="btn btn-warning" style="float: right; border: 2px solid black; text-transform: none;">Create Profile</button>
+                                        </div> <button type="submit" class="btn btn-warning" style="float: right; border: 2px solid black; text-transform: none;" >Create Profile</button>
                                     
 									</form>
                                 </div>
@@ -42,5 +45,12 @@
             </div>
         </div>
     </div>
-    </body>
+
+	<script>
+		function getImagePreview(event) {
+			// var image = URL.createObjectURL(event.target.files[0]);
+		}		  
+  	</script>
+    
+  </body>
 </html>
