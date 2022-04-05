@@ -46,6 +46,7 @@ body {
     display: none
 }
 
+
 .form-check-input.is-invalid~.form-check-label,
 .was-validated .form-check-input:invalid~.form-check-label {
     color: #f54394
