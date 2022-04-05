@@ -13,3 +13,7 @@ def login():
 @api_views.route('/signUp', methods=['GET'])
 def signUp():
     return render_template('signUp.html')
+
+@api_views.route('/create-profile', methods=['GET'])
+def createProfile():
+    return render_template('createProfile.html')
