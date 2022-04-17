@@ -23,11 +23,11 @@
                                 <div class="card-header"><h2><strong>ConnectIN</strong></h2></div>
                                 <div class="card-body">
                                     <h3 style="text-align: center;">Login</h3>
-                                    <form>
-                                        <div class="form-group"><label class="text-muted">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></div>
-                                        <div class="form-group"><label class="text-muted">Password</label><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></div>
+                                    <form method="post" action="/login">
+                                        <div class="form-group"><label class="text-muted">Email address</label><input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></div>
+                                        <div class="form-group"><label class="text-muted">Password</label><input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password"></div>
                                         <div class="form-group">
-                                        </div> <button type="submit" class="btn btn-warning" style="float: right; border: 2px solid black;">Login</button>
+                                        </div> <button type="submit" class="btn btn-warning" style="float: right; border: 2px solid black;" value="submit">Login</button>
                                     </form>
                                 </div>
                             </div>
