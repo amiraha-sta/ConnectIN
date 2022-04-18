@@ -17,3 +17,7 @@ def signUp():
 @api_views.route('/create-profile', methods=['GET'])
 def createProfile():
     return render_template('createProfile.html')
+
+@api_views.route('/dashboard', methods=['GET'])
+def dashboard():
+    return render_template('dashboard.html')
