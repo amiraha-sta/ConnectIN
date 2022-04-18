@@ -1,2 +1,6 @@
 language = "python3"
 run = "bash run.sh"
+
+host = "export FLASK_RUN_HOST=0.0.0.0"
+port = "export FLASK_RUN_PORT=8080"
+env = "export FLASK_ENV=development"
