@@ -14,7 +14,7 @@ def login():
         user = auth.authenticate(request.form["email"], request.form["password"])
         if user:
             auth.login_user(user, False)
-            return redirect('https://8080-amiraha-connectin-snq80gsoo8u.ws-us40.gitpod.io/profile')
+            return redirect(url_for('api_views.profile'))
         else:
             return ("Login Failed")
     else:
@@ -24,7 +24,8 @@ def login():
 def signUp():
     if request.method == "POST":
         user.create_user(request.form["fname"], request.form["lname"], request.form["email"], request.form["password"] )
-        return ("Signed in")
+        auth.login_user(user, false)
+        return redirect(url_for('api_views.createProfile'))
     else:
         return render_template('signUp.html')
 
@@ -33,6 +34,7 @@ def signUp():
 def profile():
     return ("Welcome " + current_user.firstName)
 
-@api_views.route('/create-profile', methods=['GET'])
+@api_views.route('/create-profile', methods=['GET', 'POST'])
+@login_required
 def createProfile():
     return render_template('createProfile.html')
