@@ -21,3 +21,8 @@ def createProfile():
 @api_views.route('/dashboard', methods=['GET'])
 def dashboard():
     return render_template('dashboard.html')
+	
+# # would need to be update to /profile/{id}
+@api_views.route('/profile', methods=['GET']) 
+def profile():
+    return render_template('profile-page.html')
